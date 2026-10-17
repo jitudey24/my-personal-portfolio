@@ -1,4 +1,5 @@
 import Image from "next/image";
+import myImage from "../assets/myImage.jpg";
 import projects from "../data/projects";
 
 const skills = ["JavaScript", "TypeScript", "React.js", "Next.js", "Tailwind CSS", "HTML5", "CSS3", "Git & GitHub", "REST APIs", "Responsive Design"];
@@ -39,7 +40,7 @@ export default function Home() {
             <div className="orbit orbit-one" /><div className="orbit orbit-two" />
             <div className="profile-card">
               <div className="profile-top"><span className="window-dot pink" /><span className="window-dot yellow" /><span className="window-dot green" /><span className="profile-label">developer.profile</span></div>
-              <div className="avatar-mark">JD<span>.</span></div>
+              <div className="avatar-photo"><Image src={myImage} alt="Jitu Dey" width={124} height={124} priority /></div>
               <p className="profile-name">Jitu Dey</p><p className="profile-role">Frontend-focused Web Developer</p>
               <div className="profile-divider" />
               <div className="profile-stat"><span>Currently learning</span><strong>Full Stack Development</strong></div>
@@ -70,7 +71,7 @@ export default function Home() {
         <div className="container"><div className="section-heading"><div><p className="eyebrow">03 / SELECTED WORK</p><h2 className="section-title">Projects with purpose<span className="gradient-text">.</span></h2></div><p className="section-intro">A few hands-on projects where I’ve practiced building real-world features.</p></div>
           <div className="projects-grid">{projects.map((project, index) => <article className="project-card" key={project.id}>
             <div className="project-image">{project.image ? <Image src={project.image} alt={project.title} fill sizes="(max-width: 760px) 100vw, 50vw" style={{objectFit:"cover"}} /> : <div className="project-placeholder">PROJECT / 0{index + 1}</div>}<span className="project-index">0{index + 1}</span></div>
-            <div className="project-content"><p className="project-category">{project.category}</p><h3>{project.title}</h3><p className="project-description">{project.description}</p><div className="tech-list">{project.technologies.slice(0, 6).map((tech) => <span key={tech}>{tech}</span>)}</div><div className="project-links">{project.live ? <a href={project.live} target="_blank" rel="noreferrer">Live demo ↗</a> : null}<a href={project.github} target="_blank" rel="noreferrer">Source code ↗</a></div></div>
+            <div className="project-content"><p className="project-category"><svg aria-hidden="true" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" strokeWidth="1.8"><path d="m12 3 2.7 5.5 6.1.9-4.4 4.3 1 6.1-5.4-2.9-5.4 2.9 1-6.1-4.4-4.3 6.1-.9L12 3Z"/></svg>{project.category}</p><h3>{project.title}</h3><p className="project-description">{project.description}</p><div className="tech-list">{project.technologies.slice(0, 6).map((tech) => <span key={tech}><svg aria-hidden="true" viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" strokeWidth="2"><path d="m8 8-4 4 4 4M16 8l4 4-4 4M14 4l-4 16"/></svg>{tech}</span>)}</div><div className="project-links">{project.live ? <a href={project.live} target="_blank" rel="noreferrer"><svg aria-hidden="true" viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" strokeWidth="1.8"><path d="M14 3h7v7M21 3l-9 9"/><path d="M19 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h6"/></svg>Live demo</a> : null}<a href={project.github} target="_blank" rel="noreferrer"><svg aria-hidden="true" viewBox="0 0 24 24" width="17" height="17" fill="currentColor"><path d="M12 .9a11.1 11.1 0 0 0-3.51 21.63c.55.1.76-.24.76-.53v-2.08c-3.1.68-3.76-1.32-3.76-1.32-.5-1.3-1.24-1.65-1.24-1.65-1.01-.69.08-.68.08-.68 1.12.08 1.71 1.15 1.71 1.15 1 1.7 2.63 1.21 3.27.93.1-.72.39-1.21.71-1.49-2.47-.28-5.07-1.24-5.07-5.5 0-1.22.44-2.21 1.15-2.99-.12-.28-.5-1.42.11-2.95 0 0 .94-.3 3.05 1.14a10.6 10.6 0 0 1 5.55 0c2.11-1.44 3.05-1.14 3.05-1.14.61 1.53.23 2.67.11 2.95.72.78 1.15 1.77 1.15 2.99 0 4.27-2.6 5.21-5.08 5.49.4.35.76 1.02.76 2.06V22c0 .29.2.64.77.53A11.1 11.1 0 0 0 12 .9Z"/></svg>Source code <span aria-hidden="true">↗</span></a></div></div>
           </article>)}</div>
         </div>
       </section>
