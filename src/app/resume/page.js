@@ -12,7 +12,7 @@ export default function ResumePage() {
           <h1>Jitu Dey</h1>
           <p className="resume-headline">Fresher Web Developer | Frontend Development</p>
           <div className="resume-contact">
-            <span>Bangladesh</span><span>Phone: 01625302484</span><span>Email: jitudey24@gmail.com</span>
+            <span>Bangladesh</span><span>Phone: 01625302484</span>
             <span>GitHub: github.com/jitudey24</span><span>LinkedIn: linkedin.com/in/jitu-dey</span>
           </div>
         </header>
