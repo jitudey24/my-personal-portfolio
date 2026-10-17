@@ -2,7 +2,35 @@ import Image from "next/image";
 import myImage from "../assets/myImage.jpg";
 import projects from "../data/projects";
 
-const skills = ["JavaScript", "TypeScript", "React.js", "Next.js", "Tailwind CSS", "HTML5", "CSS3", "Git & GitHub", "REST APIs", "Responsive Design"];
+const skills = [
+  { name: "JavaScript", icon: "js", level: "Core language" },
+  { name: "TypeScript", icon: "ts", level: "Type-safe code" },
+  { name: "React.js", icon: "react", level: "UI development" },
+  { name: "Next.js", icon: "next", level: "Full-stack framework" },
+  { name: "Tailwind CSS", icon: "tailwind", level: "Utility-first CSS" },
+  { name: "HTML5", icon: "html", level: "Web structure" },
+  { name: "CSS3", icon: "css", level: "Responsive styling" },
+  { name: "Git & GitHub", icon: "git", level: "Version control" },
+  { name: "REST APIs", icon: "api", level: "Data integration" },
+  { name: "Responsive Design", icon: "responsive", level: "All screen sizes" },
+];
+
+function SkillIcon({ type }) {
+  const common = { viewBox: "0 0 48 48", width: 32, height: 32, "aria-hidden": true, fill: "none" };
+  const paths = {
+    js: <><rect x="4" y="4" width="40" height="40" rx="7" fill="#F7DF1E" /><path d="M25 32c1 2 2 3 5 3 2 0 3-1 3-2 0-2-2-2-4-3-3-1-5-2-5-6 0-3 2-5 6-5 3 0 5 1 6 4l-4 2c-1-2-2-2-3-2s-2 1-2 2c0 1 1 2 3 2 4 2 6 3 6 7 0 4-3 6-7 6-4 0-7-2-8-5zM9 32l4-2c1 2 2 4 4 4 1 0 2-1 2-3V20h5v12c0 5-3 8-7 8-4 0-7-2-8-8z" fill="#171717"/></>,
+    ts: <><rect x="4" y="4" width="40" height="40" rx="7" fill="#3178C6" /><path d="M9 18h20v5h-7v17h-6V23H9zM29 36c2 1 4 2 6 2s3-1 3-2-1-2-4-3c-4-1-6-3-6-7 0-4 3-7 8-7 3 0 5 1 7 2l-2 5c-2-1-3-2-5-2s-2 1-2 2 1 2 4 3c4 2 6 4 6 7 0 5-4 7-9 7-4 0-7-1-9-3z" fill="#fff"/></>,
+    react: <><circle cx="24" cy="24" r="3.8" fill="#61DAFB"/><g stroke="#61DAFB" strokeWidth="2.2"><ellipse cx="24" cy="24" rx="20" ry="8"/><ellipse cx="24" cy="24" rx="20" ry="8" transform="rotate(60 24 24)"/><ellipse cx="24" cy="24" rx="20" ry="8" transform="rotate(120 24 24)"/></g></>,
+    next: <><circle cx="24" cy="24" r="20" fill="#fff"/><path d="M13 34V14l22 22M13 14l22 28M30 14v13" stroke="#111" strokeWidth="2.5"/></>,
+    tailwind: <><path d="M24 12c-7 0-11 4-13 12 3-4 6-5 10-4 2 1 4 3 6 4 4 2 9 1 14-5-3 4-6 5-10 4-2-1-4-3-6-4-4-2-9-1-14 5 3-8 7-12 13-12z" fill="#38BDF8"/><path d="M14 26c-4 0-7 3-9 8 2-2 4-3 7-2 2 0 3 2 5 3 4 2 8 1 12-4-2 2-5 3-7 2-2 0-3-2-5-3-1-1-2-2-3-4z" fill="#38BDF8" opacity=".7"/></>,
+    html: <><path d="m7 5 3 34 14 4 14-4 3-34z" fill="#E34F26"/><path d="m24 9v30l11-3 2-27z" fill="#EF652A"/><path d="M14 14h20l-1 5H19l1 5h12l-1 10-7 2-7-2-.5-5h5l.3 2 2.2.6 2.3-.6.3-3H16z" fill="#fff"/></>,
+    css: <><path d="m7 5 3 34 14 4 14-4 3-34z" fill="#1572B6"/><path d="m24 9v30l11-3 2-27z" fill="#33A9DC"/><path d="M14 14h21l-.5 5H20l.5 4h13l-1 10-8.5 2-8-2-.5-5h5l.4 2 3.1.6 3.2-.6.3-3H16z" fill="#fff"/></>,
+    git: <><path d="M22 4 4 22a3 3 0 0 0 0 4l18 18a3 3 0 0 0 4 0l18-18a3 3 0 0 0 0-4L26 4a3 3 0 0 0-4 0z" fill="#F05032"/><path d="m15 15 18 18M24 12v23" stroke="#fff" strokeWidth="3"/><circle cx="15" cy="15" r="3" fill="#fff"/><circle cx="24" cy="12" r="3" fill="#fff"/><circle cx="24" cy="35" r="3" fill="#fff"/></>,
+    api: <><rect x="5" y="5" width="38" height="38" rx="9" stroke="#67E8F9" strokeWidth="2.5"/><path d="m18 17-7 7 7 7M30 17l7 7-7 7M27 13l-6 22" stroke="#A78BFA" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/></>,
+    responsive: <><rect x="5" y="8" width="26" height="21" rx="3" stroke="#67E8F9" strokeWidth="2.5"/><path d="M12 35h12M18 29v6" stroke="#67E8F9" strokeWidth="2.5" strokeLinecap="round"/><rect x="32" y="17" width="11" height="24" rx="2.5" stroke="#A78BFA" strokeWidth="2.5"/><path d="M36 37h3" stroke="#A78BFA" strokeWidth="2" strokeLinecap="round"/></>
+  };
+  return <svg {...common}>{paths[type]}</svg>;
+}
 
 export default function Home() {
   return (
@@ -51,6 +79,7 @@ export default function Home() {
           </div>
         </div>
         <div className="container hero-bottom"><span>BASED IN BANGLADESH</span><span>DESIGN · CODE · LEARN</span><a href="#about">SCROLL TO EXPLORE ↓</a></div>
+        <div className="container quick-stats" aria-label="Portfolio highlights"><div><strong>03<span>+</span></strong><p>Featured projects</p></div><div><strong>10</strong><p>Core skills</p></div><div><strong>14</strong><p>Programming Hero batch</p></div><div><strong>100<span>%</span></strong><p>Learning mindset</p></div></div>
       </section>
 
       <section className="section section-muted" id="about">
@@ -62,8 +91,8 @@ export default function Home() {
 
       <section className="section" id="skills">
         <div className="container"><div className="section-heading"><div><p className="eyebrow">02 / TOOLKIT</p><h2 className="section-title">Skills I’m building<span className="gradient-text">.</span></h2></div><p className="section-intro">The tools I use to turn concepts into working web experiences.</p></div>
-          <div className="skills-grid">{skills.map((skill, index) => <div className="skill-card" key={skill}><span className="skill-number">0{index + 1}</span><span>{skill}</span><span className="skill-arrow">↗</span></div>)}</div>
-          <p className="skills-footnote"><span className="status-dot" /> Growing my skills through practice, projects, and code reviews.</p>
+          <div className="skills-grid">{skills.map((skill, index) => <article className="skill-card" key={skill.name}><span className="skill-number">0{index + 1}</span><div className="skill-icon"><SkillIcon type={skill.icon} /></div><h3>{skill.name}</h3><p>{skill.level}</p><span className="skill-arrow" aria-hidden="true">↗</span></article>)}</div>
+          <div className="learning-strip"><span className="learning-strip-icon">✦</span><div><strong>Always learning, always building</strong><p>Practicing through real projects in the Programming Hero Batch 14 community.</p></div><a href="#projects">See my work <span aria-hidden="true">↗</span></a></div>
         </div>
       </section>
 
