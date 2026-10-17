@@ -93,13 +93,20 @@ export default function Home() {
       <section className="section section-muted" id="education">
         <div className="container">
           <div className="section-heading">
-            <div><p className="eyebrow">02 / EDUCATION</p><h2 className="section-title">Learning with <span className="gradient-text">purpose.</span></h2></div>
-            <p className="section-intro">Building a strong foundation through structured learning and hands-on practice.</p>
+            <div><p className="eyebrow">02 / EDUCATION</p><h2 className="section-title">My learning <span className="gradient-text">journey.</span></h2></div>
+            <p className="section-intro">My formal education is complete, and I’m continuing to grow through practical web development training.</p>
           </div>
-          <div className="education-card">
-            <div className="education-mark" aria-hidden="true"><svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" strokeWidth="1.7"><path d="m2 9 10-5 10 5-10 5L2 9Z"/><path d="M6 11v5c3.5 3 8.5 3 12 0v-5M22 9v6"/></svg></div>
-            <div className="education-content"><p className="education-status">CURRENTLY LEARNING</p><h3>Full Stack Web Development</h3><p className="education-institute">Programming Hero · Batch 14</p><p>Learning modern web development through practical assignments and projects, with a focus on JavaScript, TypeScript, React, Next.js, and Tailwind CSS.</p></div>
-            <span className="education-badge">In progress</span>
+          <div className="education-list">
+            <article className="education-card">
+              <div className="education-mark" aria-hidden="true"><svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" strokeWidth="1.7"><path d="m2 9 10-5 10 5-10 5L2 9Z"/><path d="M6 11v5c3.5 3 8.5 3 12 0v-5M22 9v6"/></svg></div>
+              <div className="education-content"><p className="education-status">COMPLETED</p><h3>Diploma</h3><p className="education-institute">Diploma education</p><p>I have completed my diploma and am now building my professional skills in web development.</p></div>
+              <span className="education-badge">Completed</span>
+            </article>
+            <article className="education-card">
+              <div className="education-mark" aria-hidden="true"><svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" strokeWidth="1.7"><rect x="3" y="4" width="18" height="13" rx="2"/><path d="M8 21h8M12 17v4M7 9l3 3 6-4"/></svg></div>
+              <div className="education-content"><p className="education-status">CURRENTLY LEARNING</p><h3>Full Stack Web Development</h3><p className="education-institute">Programming Hero · Batch 14</p><p>Currently learning JavaScript, TypeScript, React, Next.js, and Tailwind CSS through practical assignments and projects.</p></div>
+              <span className="education-badge">In progress</span>
+            </article>
           </div>
         </div>
       </section>
