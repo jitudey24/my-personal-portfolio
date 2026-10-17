@@ -32,7 +32,7 @@ export default function Home() {
             <div className="social-links">
               <a href="https://github.com/jitudey24" target="_blank" rel="noreferrer">GitHub ↗</a>
               <a href="https://www.linkedin.com/in/jitu-dey" target="_blank" rel="noreferrer">LinkedIn ↗</a>
-              <a href="mailto:01625302484">Contact me ↗</a>
+              <a href="#contact">Contact me ↗</a>
             </div>
           </div>
           <div className="hero-card-wrap">
@@ -75,7 +75,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="section" id="contact"><div className="container contact-panel"><div><p className="eyebrow">04 / LET’S CONNECT</p><h2 className="section-title">Let’s build something<br /><span className="gradient-text">meaningful.</span></h2><p className="contact-description">I’m open to junior roles, internships, and opportunities to learn with a team. I’d love to hear from you.</p></div><div className="contact-actions"><a className="button button-primary" href="mailto:jitudey24@gmail.com">Send me an email ↗</a><a className="contact-link" href="https://www.linkedin.com/in/jitu-dey" target="_blank" rel="noreferrer">Connect on LinkedIn ↗</a><a className="contact-link" href="https://github.com/jitudey24" target="_blank" rel="noreferrer">Explore GitHub ↗</a></div></div></section>
+      <section className="section" id="contact"><div className="container contact-panel"><div><p className="eyebrow">04 / LET’S CONNECT</p><h2 className="section-title">Let’s build something<br /><span className="gradient-text">meaningful.</span></h2><p className="contact-description">I’m open to junior roles, internships, and opportunities to learn with a team. I’d love to hear from you.</p></div><div className="contact-actions"><a className="button button-primary" href="https://www.linkedin.com/in/jitu-dey" target="_blank" rel="noreferrer">Message me on LinkedIn ↗</a><a className="contact-link" href="https://www.linkedin.com/in/jitu-dey" target="_blank" rel="noreferrer">Connect on LinkedIn ↗</a><a className="contact-link" href="https://github.com/jitudey24" target="_blank" rel="noreferrer">Explore GitHub ↗</a></div></div></section>
 
       <footer className="site-footer"><div className="container footer-inner"><a className="brand" href="#home">J<span>D</span><i>.</i></a><p>Designed with care, built with curiosity.</p><a href="#home">Back to top ↑</a><span>© {new Date().getFullYear()} Jitu Dey</span></div></footer>
     </main>
