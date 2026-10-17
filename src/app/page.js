@@ -39,7 +39,7 @@ export default function Home() {
         <nav className="nav container" aria-label="Main navigation">
           <a className="brand" href="#home">J<span>D</span><i>.</i></a>
           <div className="nav-links">
-            <a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#contact">Contact</a>
+            <a href="#about">About</a><a href="#education">Education</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#contact">Contact</a>
           </div>
           <a className="button button-small button-outline" href="/resume">Resume <span aria-hidden="true">↗</span></a>
         </nav>
@@ -89,7 +89,21 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="section" id="skills">
+      
+      <section className="section section-muted" id="education">
+        <div className="container">
+          <div className="section-heading">
+            <div><p className="eyebrow">02 / EDUCATION</p><h2 className="section-title">Learning with <span className="gradient-text">purpose.</span></h2></div>
+            <p className="section-intro">Building a strong foundation through structured learning and hands-on practice.</p>
+          </div>
+          <div className="education-card">
+            <div className="education-mark" aria-hidden="true"><svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" strokeWidth="1.7"><path d="m2 9 10-5 10 5-10 5L2 9Z"/><path d="M6 11v5c3.5 3 8.5 3 12 0v-5M22 9v6"/></svg></div>
+            <div className="education-content"><p className="education-status">CURRENTLY LEARNING</p><h3>Full Stack Web Development</h3><p className="education-institute">Programming Hero · Batch 14</p><p>Learning modern web development through practical assignments and projects, with a focus on JavaScript, TypeScript, React, Next.js, and Tailwind CSS.</p></div>
+            <span className="education-badge">In progress</span>
+          </div>
+        </div>
+      </section>
+\n      <section className="section" id="skills">
         <div className="container"><div className="section-heading"><div><p className="eyebrow">02 / TOOLKIT</p><h2 className="section-title">Skills I’m building<span className="gradient-text">.</span></h2></div><p className="section-intro">The tools I use to turn concepts into working web experiences.</p></div>
           <div className="skills-grid">{skills.map((skill, index) => <article className="skill-card" key={skill.name}><span className="skill-number">0{index + 1}</span><div className="skill-icon"><SkillIcon type={skill.icon} /></div><h3>{skill.name}</h3><p>{skill.level}</p><span className="skill-arrow" aria-hidden="true">↗</span></article>)}</div>
           <div className="learning-strip"><span className="learning-strip-icon">✦</span><div><strong>Always learning, always building</strong><p>Practicing through real projects in the Programming Hero Batch 14 community.</p></div><a href="#projects">See my work <span aria-hidden="true">↗</span></a></div>
@@ -105,7 +119,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="section" id="contact"><div className="container contact-panel"><div><p className="eyebrow">04 / LET’S CONNECT</p><h2 className="section-title">Let’s build something<br /><span className="gradient-text">meaningful.</span></h2><p className="contact-description">I’m open to junior roles, internships, and opportunities to learn with a team. I’d love to hear from you.</p></div><div className="contact-actions"><a className="button button-primary" href="https://www.linkedin.com/in/jitu-dey" target="_blank" rel="noreferrer">Message me on LinkedIn ↗</a><a className="contact-link" href="https://www.linkedin.com/in/jitu-dey" target="_blank" rel="noreferrer">Connect on LinkedIn ↗</a><a className="contact-link whatsapp-link" href="https://wa.me/8801625302484" target="_blank" rel="noreferrer" aria-label="Chat with Jitu Dey on WhatsApp"><svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M20.5 3.5A11.8 11.8 0 0 0 12.1 0C5.6 0 .3 5.3.3 11.8c0 2.1.5 4.1 1.6 5.9L0 24l6.5-1.7a11.8 11.8 0 0 0 5.6 1.4h.1c6.5 0 11.8-5.3 11.8-11.8 0-3.2-1.2-6.1-3.5-8.4ZM12.1 21.7a9.8 9.8 0 0 1-5-1.4l-.4-.2-3.9 1 1-3.8-.3-.4a9.7 9.7 0 1 1 8.6 4.8Zm5.4-7.3c-.3-.2-1.8-.9-2.1-1s-.5-.2-.7.2-.8 1-1 1.2-.4.2-.7.1a8 8 0 0 1-2.4-1.5 9 9 0 0 1-1.7-2.1c-.2-.3 0-.5.1-.6l.5-.6c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.6s-.7-1.7-.9-2.3c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.1 1.1-1.1 2.6s1.1 3 1.3 3.2c.1.2 2.2 3.4 5.3 4.7.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.6-.1 1.8-.7 2.1-1.4.3-.7.3-1.3.2-1.4-.1-.2-.3-.3-.6-.5Z"/></svg><span>WhatsApp: 01625302484</span><span aria-hidden="true">↗</span></a><a className="contact-link" href="https://github.com/jitudey24" target="_blank" rel="noreferrer">Explore GitHub ↗</a></div></div></section>
+      <section className="section" id="contact"><div className="container contact-panel"><div><p className="eyebrow">04 / LET’S CONNECT</p><h2 className="section-title">Let’s build something<br /><span className="gradient-text">meaningful.</span></h2><p className="contact-description">I’m open to junior roles, internships, and opportunities to learn with a team. I’d love to hear from you.</p></div><div className="contact-actions"><a className="button button-primary" href="https://www.linkedin.com/in/jitu-dey" target="_blank" rel="noreferrer">Message me on LinkedIn ↗</a><a className="contact-link" href="https://www.linkedin.com/in/jitu-dey" target="_blank" rel="noreferrer">Connect on LinkedIn ↗</a><a className="contact-link whatsapp-link" href="https://wa.me/8801625302484" target="_blank" rel="noreferrer" aria-label="Chat with Jitu Dey on WhatsApp"><svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M20.5 3.5A11.8 11.8 0 0 0 12.1 0C5.6 0 .3 5.3.3 11.8c0 2.1.5 4.1 1.6 5.9L0 24l6.5-1.7a11.8 11.8 0 0 0 5.6 1.4h.1c6.5 0 11.8-5.3 11.8-11.8 0-3.2-1.2-6.1-3.5-8.4ZM12.1 21.7a9.8 9.8 0 0 1-5-1.4l-.4-.2-3.9 1 1-3.8-.3-.4a9.7 9.7 0 1 1 8.6 4.8Zm5.4-7.3c-.3-.2-1.8-.9-2.1-1s-.5-.2-.7.2-.8 1-1 1.2-.4.2-.7.1a8 8 0 0 1-2.4-1.5 9 9 0 0 1-1.7-2.1c-.2-.3 0-.5.1-.6l.5-.6c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.6s-.7-1.7-.9-2.3c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.1 1.1-1.1 2.6s1.1 3 1.3 3.2c.1.2 2.2 3.4 5.3 4.7.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.6-.1 1.8-.7 2.1-1.4.3-.7.3-1.3.2-1.4-.1-.2-.3-.3-.6-.5Z"/></svg><span>WhatsApp</span><span aria-hidden="true">↗</span></a><a className="contact-link" href="https://github.com/jitudey24" target="_blank" rel="noreferrer">Explore GitHub ↗</a></div></div></section>
 
       <footer className="site-footer"><div className="container footer-inner"><a className="brand" href="#home">J<span>D</span><i>.</i></a><p>Designed with care, built with curiosity.</p><a href="#home">Back to top ↑</a><span>© {new Date().getFullYear()} Jitu Dey</span></div></footer>
     </main>
