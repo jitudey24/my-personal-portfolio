@@ -24,3 +24,7 @@
 .quick-stats strong span{color:var(--cyan)}
 .quick-stats p{margin:5px 0 0;color:var(--muted);font-size:.75rem}
 @media(max-width:650px){.quick-stats{grid-template-columns:repeat(2,minmax(0,1fr));margin-top:28px}.quick-stats>div{padding:13px}.learning-strip{align-items:flex-start;flex-wrap:wrap;padding:17px}.learning-strip>div{flex:1;min-width:180px}.learning-strip>a{margin-left:58px}.skill-card{min-height:160px;padding:14px}.skill-icon{height:38px}}
+
+
+/* WhatsApp contact link */
+.whatsapp-link{display:inline-flex;align-items:center;gap:9px;color:#25D366;font-weight:650;transition:color .2s ease,transform .2s ease}.whatsapp-link:hover{color:#4ade80;transform:translateX(3px)}.whatsapp-link svg{flex-shrink:0}
