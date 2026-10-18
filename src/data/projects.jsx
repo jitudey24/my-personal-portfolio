@@ -1,7 +1,7 @@
 
 import project1 from "../assets/projects/projects-1.png";
 import project2 from "../assets/projects/projects-2.png";
-import project3 from "../assets/projects/projects-3.png";
+const fitLogPreview = "https://raw.githubusercontent.com/jitudey24/B-14-A06-Fit-Log/main/src/assets/banner.png";
 
 const projects = [
   {
@@ -37,37 +37,36 @@ const projects = [
   },
   {
     id: 2,
-    title: "Dev Stack - Developer Technology Stack",
-    image: project2,
-    category: "Frontend Web Application",
+    title: "Payoo Banking - Transaction UI",
+    image: null,
+    category: "JavaScript Banking Interface",
     technologies: [
-      "React",
-      "TypeScript",
-      "Vite",
-      "Tailwind CSS",
-      "DaisyUI",
-      "React Hooks",
-      "React Toastify"
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "DOM Manipulation",
+      "Event Handling",
+      "Responsive UI"
     ],
     description:
-      "A responsive developer-focused application that lets users explore different technologies and build a personalized technology stack. Users can add and remove technologies, manage selected items through React state, and view an empty-state message when their stack has no items.",
-    live: "https://b14-a05-dev-stack-omega.vercel.app",
-    github: "https://github.com/jitudey24/B14-A05-Dev-Stack",
+      "A beginner-friendly banking interface project for practicing DOM manipulation, event handling, and interactive transaction UI flows.",
+    live: "https://jitudey24.github.io/payoo-banking/",
+    github: "https://github.com/jitudey24/payoo-banking",
     challenges: [
-      "Managing selected technology IDs with React useState",
-      "Loading JSON data and rendering dynamic technology lists",
-      "Implementing conditional rendering and responsive layouts"
+      "Handling user interactions with DOM events",
+      "Updating interface values based on transaction actions",
+      "Building a clear responsive interface"
     ],
     future: [
-      "Save selected technologies using localStorage",
-      "Add search, sorting, and technology category filters",
-      "Allow users to export or share their technology stack"
+      "Improve form validation and transaction feedback",
+      "Add a transaction history view",
+      "Refine accessibility and mobile interactions"
     ],
   },
   {
     id: 3,
     title: "FitLog - Workout Planner",
-    image: project3,
+    image: fitLogPreview,
     category: "Fitness & Productivity Web Application",
     technologies: [
       "Next.js",
