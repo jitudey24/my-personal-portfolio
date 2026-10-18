@@ -1,6 +1,5 @@
 
 import project1 from "../assets/projects/projects-1.png";
-import project2 from "../assets/projects/projects-2.png";
 const fitLogPreview = "https://raw.githubusercontent.com/jitudey24/B-14-A06-Fit-Log/main/src/assets/banner.png";
 
 const projects = [
