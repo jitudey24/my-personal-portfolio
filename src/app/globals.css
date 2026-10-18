@@ -172,3 +172,39 @@ button, a { touch-action: manipulation; }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
 }
+
+
+/* Original CV PDF viewer */
+.resume-viewer {
+  width: min(100%, 1000px);
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 20px 70px rgba(23, 32, 51, 0.12);
+}
+.resume-pdf {
+  display: block;
+  width: 100%;
+  height: min(82vh, 1100px);
+  min-height: 680px;
+  border: 0;
+  background: #fff;
+}
+.resume-fallback {
+  padding: 32px;
+  color: #1c2432;
+  text-align: center;
+}
+.resume-fallback a {
+  display: inline-block;
+  margin: 8px;
+  color: #6d4bc3;
+  text-decoration: underline;
+}
+@media (max-width: 650px) {
+  .resume-page { padding: 24px 12px; }
+  .resume-toolbar { flex-wrap: wrap; }
+  .resume-toolbar .button { flex: 1 1 180px; }
+  .resume-pdf { height: 78vh; min-height: 520px; }
+}
