@@ -37,7 +37,7 @@ const projects = [
   {
     id: 2,
     title: "Payoo Banking - Transaction UI",
-    image: null,
+    image: "https://raw.githubusercontent.com/jitudey24/b14-web-dev-portfolio/main/images/Rectangle%2012.png",
     category: "JavaScript Banking Interface",
     technologies: [
       "HTML",
