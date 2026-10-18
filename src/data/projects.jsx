@@ -51,7 +51,7 @@ const projects = [
     ],
     description:
       "A responsive developer-focused application that lets users explore different technologies and build a personalized technology stack. Users can add and remove technologies, manage selected items through React state, and view an empty-state message when their stack has no items.",
-    live: "",
+    live: "https://b14-a05-dev-stack-omega.vercel.app",
     github: "https://github.com/jitudey24/B14-A05-Dev-Stack",
     challenges: [
       "Managing selected technology IDs with React useState",
@@ -81,7 +81,7 @@ const projects = [
     ],
     description:
       "A modern fitness web application built with Next.js that helps users discover workouts and organize daily exercise plans. Features include a workout library, detailed workout pages, save-for-later functionality, workout completion tracking, sorting by duration, calories, or rating, and plan statistics for exercises, workout minutes, and calories burned.",
-    live: "",
+    live: "https://b-14-a06-fit-log.vercel.app",
     github: "https://github.com/jitudey24/B-14-A06-Fit-Log",
     challenges: [
       "Managing shared workout and saved-item state with React Context API",
