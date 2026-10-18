@@ -81,7 +81,7 @@ const projects = [
     ],
     description:
       "A modern fitness web application built with Next.js that helps users discover workouts and organize daily exercise plans. Features include a workout library, detailed workout pages, save-for-later functionality, workout completion tracking, sorting by duration, calories, or rating, and plan statistics for exercises, workout minutes, and calories burned.",
-    live: "https://b-14-a06-fit-log.vercel.app",
+    live: "https://b-14-a06-fit-log.vercel.app/",
     github: "https://github.com/jitudey24/B-14-A06-Fit-Log",
     challenges: [
       "Managing shared workout and saved-item state with React Context API",
