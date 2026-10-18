@@ -1,0 +1,8 @@
+const skills = [
+ {name:"JavaScript",level:"Core language"},{name:"TypeScript",level:"Type-safe code"},{name:"React.js",level:"UI development"},{name:"Next.js",level:"Full-stack framework"},{name:"Tailwind CSS",level:"Utility-first CSS"},{name:"HTML5",level:"Web structure"},{name:"CSS3",level:"Responsive styling"},{name:"Git & GitHub",level:"Version control"},{name:"REST APIs",level:"Data integration"},{name:"Responsive Design",level:"All screen sizes"}
+];
+export default function Skills() {
+ return <section className="section" id="skills"><div className="container"><div className="section-heading"><div><p className="eyebrow">03 / TOOLKIT</p><h2 className="section-title">Skills I’m building<span className="gradient-text">.</span></h2></div><p className="section-intro">The tools I use to turn concepts into working web experiences.</p></div>
+ <div className="skills-grid">{skills.map((skill,index)=><article className="skill-card" key={skill.name}><span className="skill-number">0{index+1}</span><span className="skill-icon" aria-hidden="true">✦</span><h3>{skill.name}</h3><p>{skill.level}</p><span className="skill-arrow" aria-hidden="true">↗</span></article>)}</div>
+ <div className="learning-strip"><span className="learning-strip-icon">✦</span><div><strong>Always learning, always building</strong><p>Practicing through real projects in the Programming Hero Batch 14 community.</p></div><a href="#projects">See my work <span aria-hidden="true">↗</span></a></div></div></section>;
+}
