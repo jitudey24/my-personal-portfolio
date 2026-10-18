@@ -1,0 +1,6 @@
+export default function About() {
+  return <section className="section section-muted" id="about"><div className="container two-column">
+    <div><p className="eyebrow">01 / ABOUT ME</p><h2 className="section-title">Curious mind.<br /><span className="gradient-text">Builder’s mindset.</span></h2></div>
+    <div className="about-copy"><p>I’m a fresher web developer from Bangladesh, focused on creating accessible and responsive web applications. I enjoy turning ideas into useful interfaces and learning how the frontend connects with backend services.</p><p>I’m currently developing my skills through hands-on projects and the Programming Hero Batch 14 program. I’m looking for an entry-level opportunity where I can contribute, learn from experienced developers, and grow into a well-rounded engineer.</p><div className="learning-note"><span>✳</span><div><strong>My approach</strong><p>Build consistently, ask questions, learn from feedback, and improve one feature at a time.</p></div></div></div>
+  </div></section>;
+}
