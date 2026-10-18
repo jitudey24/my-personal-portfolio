@@ -1,0 +1,8 @@
+import Image from "next/image";
+import projects from "../data/projects";
+export default function Projects() {
+ return <section className="section section-muted" id="projects"><div className="container"><div className="section-heading"><div><p className="eyebrow">04 / SELECTED WORK</p><h2 className="section-title">Projects with purpose<span className="gradient-text">.</span></h2></div><p className="section-intro">A few hands-on projects where I’ve practiced building real-world features.</p></div>
+ <div className="projects-grid">{projects.map((project,index)=><article className="project-card" key={project.id}><div className="project-image">{project.image?<Image src={project.image} alt={project.title} fill sizes="(max-width: 760px) 100vw, 50vw" style={{objectFit:"cover"}}/>:<div className="project-placeholder">PROJECT / 0{index+1}</div>}<span className="project-index">0{index+1}</span></div>
+ <div className="project-content"><p className="project-category">{project.category}</p><h3>{project.title}</h3><p className="project-description">{project.description}</p><div className="tech-list">{project.technologies.slice(0,6).map(tech=><span key={tech}>{tech}</span>)}</div><div className="project-links">{project.live?<a href={project.live} target="_blank" rel="noreferrer">Live demo ↗</a>:null}<a href={project.github} target="_blank" rel="noreferrer">Source code ↗</a></div></div></article>)}</div>
+ </div></section>;
+}
