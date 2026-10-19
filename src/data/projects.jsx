@@ -1,5 +1,6 @@
 
 import project1 from "../assets/projects/projects-1.png";
+import project3 from "../assets/projects/projects-3.png";
 const fitLogPreview = "https://raw.githubusercontent.com/jitudey24/B-14-A06-Fit-Log/main/src/assets/banner.png";
 
 const projects = [
@@ -21,7 +22,7 @@ const projects = [
     ],
     description:
       "A responsive market price tracking web application built with Next.js. It helps users explore essential product prices in Bangladesh, compare daily price changes, browse products by category, and view market-specific pricing information. Includes authentication, protected product details, user profile management, dynamic routing, loading skeletons, and responsive UI.",
-    live: "https://b-14-a-7-bazar-dor.vercel.app",
+    live: "https://b-14-a-7-bazar-dor.vercel.app/",
     github: "https://github.com/jitudey24/B-14-A07-Bazar-Dor",
     challenges: [
       "Integrating REST APIs with Next.js server and client components",
@@ -34,34 +35,32 @@ const projects = [
       "Add advanced product search and filtering"
     ],
   },
-  {
-    id: 2,
-    title: "Payoo Banking - Transaction UI",
-    image: "https://raw.githubusercontent.com/jitudey24/b14-web-dev-portfolio/main/images/Rectangle%2012.png",
-    category: "JavaScript Banking Interface",
-    technologies: [
-      "HTML",
-      "CSS",
-      "JavaScript",
-      "DOM Manipulation",
-      "Event Handling",
-      "Responsive UI"
-    ],
-    description:
-      "A beginner-friendly banking interface project for practicing DOM manipulation, event handling, and interactive transaction UI flows.",
-    live: "https://jitudey24.github.io/payoo-banking/",
-    github: "https://github.com/jitudey24/payoo-banking",
-    challenges: [
-      "Handling user interactions with DOM events",
-      "Updating interface values based on transaction actions",
-      "Building a clear responsive interface"
-    ],
-    future: [
-      "Improve form validation and transaction feedback",
-      "Add a transaction history view",
-      "Refine accessibility and mobile interactions"
-    ],
-  },
+ {
+  id: 2,
+  title: "Dev Stack",
+  image: project3 ,// guess
+  category: "Full Stack Web Application", // guess
+  technologies: [
+    "Next.js",
+    "React",
+    "Tailwind CSS",
+    "JavaScript"
+  ], // guess
+  description:
+    "A responsive web application built as part of my web development journey, focused on clean UI, reusable components, and smooth user experience across devices.", // generic
+  live: "https://b14-a05-dev-stack-omega.vercel.app/",
+  github: "https://github.com/jitudey24/B-14-A05-Dev-Stack", // guess, 404 dicche
+  challenges: [
+    "Structuring reusable components and managing application state",
+    "Building a consistent responsive layout across screen sizes",
+    "Deploying and debugging the project in a production environment"
+  ],
+  future: [
+    "Add user authentication and personalized features",
+    "Improve performance, accessibility, and SEO",
+    "Expand features based on user feedback"
+  ],
+},
   {
     id: 3,
     title: "FitLog - Workout Planner",
@@ -79,7 +78,7 @@ const projects = [
     ],
     description:
       "A modern fitness web application built with Next.js that helps users discover workouts and organize daily exercise plans. Features include a workout library, detailed workout pages, save-for-later functionality, workout completion tracking, sorting by duration, calories, or rating, and plan statistics for exercises, workout minutes, and calories burned.",
-    live: "https://b-14-a06-fit-log.vercel.app/",
+    live: "https://b-14-a06-fit-log.vercel.app",
     github: "https://github.com/jitudey24/B-14-A06-Fit-Log",
     challenges: [
       "Managing shared workout and saved-item state with React Context API",

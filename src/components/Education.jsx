@@ -14,12 +14,12 @@ export default function Education() {
           <article className="education-card">
             <div className="education-mark" aria-hidden="true">✦</div>
             <div className="education-content">
-              <p className="education-status">RESULT PENDING</p>
+              <p className="education-status">COMPLETED . 2025</p>
               <h3>Diploma in Engineering — Electrical</h3>
               <p className="education-institute">National Institute of Technology (NIT), Chattogram</p>
               <p>Bangladesh Technical Education Board (BTEB) · Expected 2026</p>
             </div>
-            <span className="education-badge">Result pending</span>
+            <span className="education-badge">Completed</span>
           </article>
 
           <article className="education-card">
